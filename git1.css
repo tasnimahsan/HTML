@@ -1,0 +1,47 @@
+body{
+    background-color: #FFF;
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+}
+
+table{
+	width: 600px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+td{
+	vertical-align: top;
+	padding: 5px;
+	word-wrap: break-word;
+}
+
+#fullpage{
+	background-color: #E6E6FA;
+	margin: 150px;
+}
+
+.label_col{
+	text-align: right;
+}
+
+.input_col{
+	text-align: left;
+}
+
+.feedback_col{
+	text-align: left;
+	vertical-align: middle;
+	color: #000000;
+	font-size: small;
+}
+.Button{
+	margin: auto;
+	text-align: center;
+	width: 50px;
+	color: #FFF;
+}
+.orderSummary(){
+	text-align: middle;
+}

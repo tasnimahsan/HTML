@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="git1.css">
+<title>Final Assignment</title>
+<script type="text/javascript" src="git1.js"></script>
+</head>
+<body>
+<form action="#">
+<div id="fullpage">
+<h1 style="text-align:center">  Maeve's Food Lounge</h1>
+<center>
+<img src="fastfood.jpg" height="250" width="500">
+</center>
+<table border="0">
+<tr>
+<td class="label_col">Full Name:</td>
+<td class="input_col"><input name="fullname" id="fullname" type="text" onblur="validateFullName();"></td>
+<td class="feedback_col"><span id="fullNamePrompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label_col">Address:</td>
+<td class="input_col"><input name="address" id="address" type="text" required></td>
+</tr>
+<tr>
+<td class="label_col">Phone Number:</td>
+<td class="input_col"><input name="phone" id="phone" type="text" onblur="validatePhoneNumber();"></td>
+<td class="feedback_col"><span id="phonePrompt">xxx-xxxx-xxxx</span></td>
+</tr>
+<tr>
+<td class="label_col">Food Name:</td>
+<td class="input_col"><input name="food" type="checkbox" value="Burger">Burger<br>
+<input name="food" type="checkbox" value="Pizza">Pizza<br>
+<input name="food" type="checkbox" value="French Fry">French Fry<br>
+<input name="food" type="checkbox" value="Chicken fry">Chicken Fry<br>
+<input name="food" type="checkbox" value="Chow Mein">Chow Mein<br>
+</td>
+<td class="feedback_col">Quantity<input type="number" name="quantity" min="1" max="15"><br>
+Quantity<input type="number" name="quantity" value="Quamtity" min="1" max="15"><br>
+Quantity<input type="number" name="quantity" min="1" max="15"><br>
+Quantity<input type="number" name="quantity" min="1" max="15"><br>
+Quantity<input type="number" name="quantity" min="1" max="15"><br>
+</td>
+</tr>
+
+<tr>
+<td class="label_col">Additionals:</td>
+<td class="input_col"><input name="add" type="checkbox" value="Sauce">Sauce<br>
+<input name="add" type="checkbox" value="Cheese patty">Cheese Patty<br>
+<input name="add" type="checkbox" value="Bacon">Bacon<br>
+</td>
+</tr>
+<tr>
+<td class="label_col">Date:</td>
+<td class="input_col"><input type="date" name="Date"></td>
+</tr>
+<tr>
+<td class="label_col">Payment Method:</td>
+<td class="input_col"><input type="radio" name="pay" value="Cash">Cash<br>
+<input type="radio" name="pay" value="Card">Card<br>
+</td>
+</tr>
+<tr>
+<td class="Button" id="Button" colspan="3"><button onclick="orderSummary();">Order Details</button></td>
+</tr>
+</table>
+<p id="order">&nbsp;</p>
+</div>
+</form>
+</body>
+</html>
